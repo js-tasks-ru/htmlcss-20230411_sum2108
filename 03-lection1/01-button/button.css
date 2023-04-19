@@ -1,1 +1,73 @@
 /* Стилизация кнопки */
+
+/*---BUTTONS-CONTAINER---*/
+/*VVV---optional component---VVV*/
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 64px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.buttons-container__column{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.button{
+    min-width: 250px;
+    flex: 0 1;
+    border-radius: 8px;
+    padding: 16px 64px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+}
+/*^^^---optional component---^^^*/
+
+/*---PRIMARY---*/
+.button_primary{
+    background-color: var(--button-primary);
+    color: var(--white);
+    transition: var(--hover-transition);
+}
+.button_primary:hover:enabled{
+    background-color: var(--button-primary-hover);
+    cursor: pointer;
+}
+
+/*---SECONDARY---*/
+.button_secondary{
+    background-color: var(--button-secondary);
+    color: var(--white);
+    transition: var(--hover-transition);
+}
+.button_secondary:hover:enabled{
+    background-color: var(--button-secondary-hover);
+    cursor: pointer;
+}
+/*---ALTERNATE---*/
+.button_alternate{
+    background-color: var(--button-alternate);
+    color: var(--grey-4);
+    border: 1px solid var(--grey-3);
+    transition: var(--hover-transition);
+}
+.button_alternate:hover:enabled{
+    background-color: var(--button-alternate-hover);
+    border: 1px solid var(--black);
+    cursor: pointer;
+}
+
+.button:disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.button_alternate:disabled{
+    opacity: 0.3;
+}
