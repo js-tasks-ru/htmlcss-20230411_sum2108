@@ -22,9 +22,11 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --font-inter: 'Inter', sans-serif;
 }
 
 * {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
