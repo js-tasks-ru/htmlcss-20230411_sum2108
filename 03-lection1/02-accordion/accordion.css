@@ -1,1 +1,41 @@
 /* Стилизация аккордеона */
+
+/*VVV---optional component---VVV*/
+.accordions-container{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 64px;
+}
+/*^^^---optional component---^^^*/
+
+.accordion{
+    padding: 24px 32px 32px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+}
+.accordion__image {
+    cursor: pointer;
+    transition: ease-in 0.25s;
+}
+.accordion[open] .accordion__image{
+    transform: rotate(180deg);
+}
+.accordion__summary{
+    display: flex;
+    justify-content: space-between;
+}
+.accordion__title, .accordion__content{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.accordion__title{
+    color: var(--black);
+}
+.accordion__content{
+    margin-top: 16px;
+    color: var(--grey-4);
+}
