@@ -1,29 +1,25 @@
+@import '../../components/accordion-container/accordion-container.css';
 /* Стилизация аккордеона */
-
-/*VVV---optional component---VVV*/
-.accordions-container{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 64px;
-}
-/*^^^---optional component---^^^*/
-
-.accordion{
+.accordion__item{
     padding: 24px 32px 32px;
+    margin-bottom: 8px;
     border: 1px solid var(--grey-3);
     border-radius: 8px;
 }
-.accordion__image {
+.accordion__item:last-child {
+    margin-bottom: 0;
+}
+.accordion__arrow {
     cursor: pointer;
     transition: ease-in 0.25s;
 }
-.accordion[open] .accordion__image{
+.accordion__item[open] .accordion__arrow{
     transform: rotate(180deg);
 }
 .accordion__summary{
     display: flex;
     justify-content: space-between;
+    color: var(--black);
 }
 .accordion__title, .accordion__content{
     font-family: 'Inter', sans-serif;
@@ -33,7 +29,6 @@
     line-height: 24px;
 }
 .accordion__title{
-    color: var(--black);
 }
 .accordion__content{
     margin-top: 16px;

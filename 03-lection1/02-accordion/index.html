@@ -2,39 +2,45 @@
 <!-- Страница с аккордеоном -->
 <html lang="ru">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./accordion.css">
     </head>
     <body>
-    <div class="accordions-container">
-        <details class="accordion">
-            <summary class="accordion__summary">
-                <p class="accordion__title">Accordion item 1</p>
-                <img class="accordion__image" src="../../assets/images/arrow.svg" alt="Иконка открытия/закрытия аккордеона">
-            </summary>
-            <p class="accordion__content">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-        </details>
-        <details class="accordion">
-            <summary class="accordion__summary">
-                <div class="accordion__title">Accordion item 2</div>
-                <img class="accordion__image" src="../../assets/images/arrow.svg" alt="Иконка открытия/закрытия аккордеона">
-            </summary>
-            <p class="accordion__content">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-        </details>
-        <details class="accordion">
-            <summary class="accordion__summary">
-                <div class="accordion__title">Accordion item 3</div>
-                <img class="accordion__image" src="../../assets/images/arrow.svg" alt="Иконка открытия/закрытия аккордеона">
-            </summary>
-            <p class="accordion__content">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-            </p>
-        </details>
-    </div>
+        <div class="accordion-container">
+            <div class="accordion">
+                <details class="accordion__item">
+                    <summary class="accordion__summary">
+                        Accordion item 1
+                        <img class="accordion__arrow" src="../../assets/images/arrow.svg" alt="Иконка открытия/закрытия аккордеона">
+                    </summary>
+                    <div class="accordion__content">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </div>
+                </details>
+                <details class="accordion__item">
+                    <summary class="accordion__summary">
+                        Accordion item 2
+                        <img class="accordion__arrow" src="../../assets/images/arrow.svg" alt="Иконка открытия/закрытия аккордеона">
+                    </summary>
+                    <div class="accordion__content">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </div>
+                </details>
+                <details class="accordion__item">
+                    <summary class="accordion__summary">
+                        Accordion item 3
+                        <img class="accordion__arrow" src="../../assets/images/arrow.svg" alt="Иконка открытия/закрытия аккордеона">
+                    </summary>
+                    <div class="accordion__content">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </div>
+                </details>
+            </div>
+        </div>
 
     </body>
 </html>
