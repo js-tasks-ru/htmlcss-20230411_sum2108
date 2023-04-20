@@ -1,0 +1,15 @@
+/*---BUTTONS-CONTAINER---*/
+.buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 64px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.buttons-container__column{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
