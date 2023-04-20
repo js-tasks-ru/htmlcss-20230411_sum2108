@@ -1,39 +1,23 @@
+@import '../../components/button-container/button-container.css';
+
 /* Стилизация кнопки */
-
-/*---BUTTONS-CONTAINER---*/
-/*VVV---optional component---VVV*/
-.buttons-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 64px;
-    gap: 8px;
-    flex-wrap: wrap;
-}
-.buttons-container__column{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
 .button{
-    min-width: 250px;
-    flex: 0 1;
+    min-width: 182px;
     border-radius: 8px;
-    padding: 16px 64px;
+    padding: 15px 62px 14px 63px;
     border: none;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 19px;
+    transition: var(--hover-transition);
+    cursor: pointer;
 }
-/*^^^---optional component---^^^*/
 
 /*---PRIMARY---*/
 .button_primary{
     background-color: var(--button-primary);
     color: var(--white);
-    transition: var(--hover-transition);
 }
 .button_primary:hover:enabled{
     background-color: var(--button-primary-hover);
@@ -44,7 +28,6 @@
 .button_secondary{
     background-color: var(--button-secondary);
     color: var(--white);
-    transition: var(--hover-transition);
 }
 .button_secondary:hover:enabled{
     background-color: var(--button-secondary-hover);
@@ -55,17 +38,15 @@
     background-color: var(--button-alternate);
     color: var(--grey-4);
     border: 1px solid var(--grey-3);
-    transition: var(--hover-transition);
 }
 .button_alternate:hover:enabled{
     background-color: var(--button-alternate-hover);
     border: 1px solid var(--black);
-    cursor: pointer;
 }
 
 .button:disabled{
     opacity: 0.5;
-    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .button_alternate:disabled{
