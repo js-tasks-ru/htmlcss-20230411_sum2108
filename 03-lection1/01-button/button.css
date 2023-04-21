@@ -29,7 +29,6 @@
 }
 .button_secondary:hover:enabled{
     background-color: var(--button-secondary-hover);
-    cursor: pointer;
 }
 /*---ALTERNATE---*/
 .button_alternate{
