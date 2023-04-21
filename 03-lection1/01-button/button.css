@@ -1,4 +1,3 @@
-@import '../../components/button-container/button-container.css';
 
 /* Стилизация кнопки */
 .button{
@@ -21,7 +20,6 @@
 }
 .button_primary:hover:enabled{
     background-color: var(--button-primary-hover);
-    cursor: pointer;
 }
 
 /*---SECONDARY---*/
