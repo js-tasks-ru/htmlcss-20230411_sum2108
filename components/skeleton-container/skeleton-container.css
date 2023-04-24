@@ -1,0 +1,10 @@
+body, html {
+    height: 100%;
+}
+
+.skeleton-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
