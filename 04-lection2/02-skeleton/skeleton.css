@@ -3,8 +3,7 @@
     flex-direction: column;
     gap: 24px;
     padding: 24px 40px 32px 24px;
-    min-width: 579px;
-    background: #FFFFFF;
+    background: var(--white);
     border: 1px solid #ACB5BD;
     border-radius: 8px;
 }
@@ -19,7 +18,7 @@
     display: block;
     min-width: 64px;
     min-height: 64px;
-    background-color: #DDE2E5;
+    background-color: var(--grey-2);
     border-radius: 50%;
 }
 
@@ -34,5 +33,21 @@
     width: 100%;
     min-height: 20px;
     background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.short_row {
+    width: 30%;
+}
+
+.mid_row {
+    width: 50%;
+}
+
+.long_row {
+    width: 70%;
+}
+
+.full_row {
+    width: 100%;
 }
 
