@@ -1,0 +1,53 @@
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 40px 32px 24px;
+    background: var(--white);
+    border: 1px solid #ACB5BD;
+    border-radius: 8px;
+}
+
+.skeleton__header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.skeleton__person-img {
+    display: block;
+    min-width: 64px;
+    min-height: 64px;
+    background-color: var(--grey-2);
+    border-radius: 50%;
+}
+
+.skeleton__block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.skeleton__row {
+    width: 100%;
+    min-height: 20px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.skeleton__row_short {
+    width: 30%;
+}
+
+.skeleton__row_mid {
+    width: 50%;
+}
+
+.skeleton__row_long {
+    width: 70%;
+}
+
+.skeleton__row_full {
+    width: 100%;
+}
+
