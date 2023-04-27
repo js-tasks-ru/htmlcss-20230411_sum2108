@@ -1,8 +1,7 @@
-body, html {
+html, body {
     height: 100%;
 }
-
-.histogram-container {
+.common-container {
     height: 100%;
     display: flex;
     align-items: center;
