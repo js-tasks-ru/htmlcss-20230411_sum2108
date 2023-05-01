@@ -3,10 +3,26 @@
 <html lang="ru">
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
+        <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
+        <link rel="stylesheet" href="../../components/containers/common-container/common-container.css">
         <link rel="stylesheet" href="./modal.css">
         <title>Modal</title>
     </head>
     <body>
+        <div class="common-container">
+            <button class="button button_primary" id="modal-open">Open</button>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-container">
+                <div class="modal__inner">
+                    <label class="modal__label" for="name">Name</label>
+                    <input class="modal__input" id="name" type="text" placeholder="Input name">
+                    <label class="modal__label" for="email">Email</label>
+                    <input class="modal__input" id="email" type="text" placeholder="Input email">
+                    <button class="button button_primary button_modal" type="button" id="modal-close">Submit</button>
+                </div>
+            </div>
+        </div>
     </body>
     <script src="./index.js"></script> 
 </html>
