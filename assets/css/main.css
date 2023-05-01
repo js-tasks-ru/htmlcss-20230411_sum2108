@@ -42,29 +42,35 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/*-------HEADER--------*/
-.header{
-    text-align: center;
-    color: white;
-    background-color: red;
+html, body {
+    height: 100%;
 }
-.header_nav {
-    padding: 16px 0;
-    background-color: orange;
-}
-.header_nav > a {
-    text-decoration: none;
-    color: white;
-}
-/*--------MAIN---------*/
-.main{
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
-    gap: 4px;
-    background-color: green;
-    color: white;
-}
+
+
+
+/*!*-------HEADER--------*!*/
+/*.header{*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*    background-color: red;*/
+/*}*/
+/*.header_nav {*/
+/*    padding: 16px 0;*/
+/*    background-color: orange;*/
+/*}*/
+/*.header_nav > a {*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*}*/
+/*!*--------MAIN---------*!*/
+/*.main{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    padding: 8px;*/
+/*    gap: 4px;*/
+/*    background-color: green;*/
+/*    color: white;*/
+/*}*/
 /*--------ARTICLE--------*/
 .article{
     padding: 8px;
@@ -73,11 +79,11 @@
 .article_title{
     margin-bottom: 16px;
 }
-/*-------FOOTER--------*/
-.footer{
-    padding: 16px 0;
-    text-align: center;
-    font-size: 32px;
-    color: white;
-    background-color: #7048E8;
-}
+/*!*-------FOOTER--------*!*/
+/*.footer{*/
+/*    padding: 16px 0;*/
+/*    text-align: center;*/
+/*    font-size: 32px;*/
+/*    color: white;*/
+/*    background-color: #7048E8;*/
+/*}*/

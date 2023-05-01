@@ -1,5 +1,6 @@
 .main {
-    height: 100vh;
-    padding: 64px 0;
-    background: #F9FAFC;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-area: main;
 }

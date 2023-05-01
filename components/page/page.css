@@ -1,4 +1,7 @@
 .page {
-    margin: 0 auto;
-    background-color: white;
+    display: grid;
+    height: 100%;
+    background: white;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer";
 }
