@@ -4,10 +4,6 @@
     background-color: red;
 }
 
-.header__grid {
-    grid-area: header;
-}
-
 .header__title {
     padding: 40px 0;
     font-weight: 500;

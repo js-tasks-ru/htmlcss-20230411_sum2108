@@ -6,10 +6,6 @@
     background-color: #7048E8;
 }
 
-.footer__grid {
-    grid-area: footer;
-}
-
 .footer__title{
     margin-bottom: 32px;
     text-align: center;

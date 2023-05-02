@@ -3,7 +3,3 @@
     display: grid;
     grid-template-columns: auto 1fr;
 }
-
-.main__grid {
-    grid-area: main;
-}
