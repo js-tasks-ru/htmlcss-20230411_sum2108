@@ -9,10 +9,6 @@
     z-index: 1;
 }
 
-.modal-container {
-
-}
-
 .modal__inner {
     position: absolute;
     display: flex;
