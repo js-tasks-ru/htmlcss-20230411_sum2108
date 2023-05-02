@@ -1,8 +1,11 @@
 .header {
-    grid-area: header;
     text-align: center;
     color: white;
     background-color: red;
+}
+
+.header__grid {
+    grid-area: header;
 }
 
 .header__title {
