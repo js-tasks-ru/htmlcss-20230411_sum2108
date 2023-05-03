@@ -6,14 +6,22 @@
     min-width: 350px;
     min-height: 367px;
     height: 100%;
-    background: #FFFFFF;
+    background: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
 
     font-family: 'Roboto';
     font-style: normal;
 
-    color: #212429;
+    color: var(--black);
+}
+
+.card__preview {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .card__title {
@@ -29,5 +37,25 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    color: #212429;
+    color: var(--black);
+}
+
+@media screen and (max-width: 375px){
+    .card {
+        padding: 0;
+        min-width: 164px;
+        min-height: 231px;
+    }
+    .card__preview {
+        border-bottom: 1px solid var(--grey-2);
+    }
+    .card__title {
+        margin-top: 12px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .card__description {
+        display: none;
+    }
 }

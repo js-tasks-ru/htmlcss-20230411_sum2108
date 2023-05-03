@@ -1,15 +1,10 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    color: white;
-    height: 100vh;
     padding: 64px 0;
-    background: #F9FAFC;
+    background: var(--light-white);
 }
 
-.page__main {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+@media screen and (max-width: 375px){
+    .main {
+        background: var(--white);
+    }
 }

@@ -1,6 +1,6 @@
 .calendar {
     padding: 28px 25px 32px 25px;
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     border-radius: 8px;
     width: 100%;
     max-width: 300px;
@@ -12,7 +12,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: #334D6E;
+    color: var(--dark-blue);
 }
 
 .calendar__title {
@@ -56,4 +56,16 @@
 
 .calendar_preview {
     padding-bottom: 50%;
+}
+
+@media screen and (max-width: 375px) {
+    .calendar {
+        border: none;
+    }
+    .calendar__title, .calendar__numbers {
+        font-size: 12px;
+    }
+    .calendar__item {
+        font-size: 8px;
+    }
 }
