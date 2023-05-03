@@ -1,3 +1,9 @@
+.header {
+    text-align: center;
+    color: white;
+    background-color: red;
+}
+
 .header__title {
     padding: 40px 0;
     font-weight: 500;
