@@ -1,13 +1,29 @@
-.header {
+.header{
     text-align: center;
     color: white;
-    background-color: red;
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #DDE2E5;
 }
-
+.header_nav {
+    padding: 16px 0;
+    background-color: orange;
+}
+.header_nav > a {
+    text-decoration: none;
+    color: white;
+}
 .header__title {
     padding: 40px 0;
     font-weight: 500;
     font-size: 50px;
     line-height: 64px;
+    color: #212429;
+    text-align: left;
     font-family: var(--font-inter);
+}
+
+.header__nav-panel {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
 }

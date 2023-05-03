@@ -1,0 +1,13 @@
+.preview {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.preview__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

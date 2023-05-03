@@ -3,6 +3,11 @@
 @import '../../components/main/main.css';
 @import '../../components/header/header.css';
 @import '../../components/page/page.css';
+@import '../../components/card/card.css';
+@import '../../components/preview/preview.css';
+@import '../../components/tooltip/tooltip.css';
+@import '../../components/calendar/calendar.css';
+@import '../../components/histogram/histogram.css';
 @import '../../components/containers/container/container.css';
 
 :root {
@@ -84,11 +89,3 @@ html, body {
 .article_title{
     margin-bottom: 16px;
 }
-/*!*-------FOOTER--------*!*/
-/*.footer{*/
-/*    padding: 16px 0;*/
-/*    text-align: center;*/
-/*    font-size: 32px;*/
-/*    color: white;*/
-/*    background-color: #7048E8;*/
-/*}*/

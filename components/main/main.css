@@ -1,5 +1,15 @@
 .main {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    color: white;
+    height: 100vh;
+    padding: 64px 0;
+    background: #F9FAFC;
+}
+
+.page__main {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
