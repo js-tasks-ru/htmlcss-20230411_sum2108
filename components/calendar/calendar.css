@@ -58,7 +58,7 @@
     padding-bottom: 50%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
     .calendar {
         border: none;
     }

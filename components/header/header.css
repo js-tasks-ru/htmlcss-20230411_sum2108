@@ -3,14 +3,6 @@
     background-color: var(--white);
     border-bottom: 1px solid var(--grey-2);
 }
-.header_nav {
-    padding: 16px 0;
-    background-color: orange;
-}
-.header_nav > a {
-    text-decoration: none;
-    color: var(--white);
-}
 .header__title {
     padding: 40px 0;
     font-weight: 500;
@@ -32,7 +24,7 @@
     display: none;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 767px){
     .header{
         background-color: var(--light-white);
     }
@@ -53,8 +45,5 @@
     .header__logo {
         margin: 0 auto;
         padding: 0 20px;
-    }
-    .header__menu {
-        position: absolute;
     }
 }
