@@ -54,10 +54,11 @@
     background: var(--light-blue);
 }
 
-.calendar_preview {
-    padding-bottom: 50%;
+.calendar_small {
+    max-width: 210px;
+    padding: 0;
+    border: none;
 }
-
 @media screen and (max-width: 767px) {
     .calendar {
         border: none;
