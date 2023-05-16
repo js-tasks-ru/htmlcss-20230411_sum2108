@@ -6,14 +6,44 @@
     grid-template-areas: "header" "main" "footer";
 }
 
-.page__main {
-    grid-area: main;
-}
-
 .page__header {
     grid-area: header;
 }
 
+.page__main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    grid-auto-flow: dense;
+}
+
+.page__component {
+    display: grid;
+    gap: 56px;
+    width: 100%;
+    grid-template-columns: auto 1fr;
+    grid-area: main;
+}
+
+
 .page__footer {
     grid-area: footer;
+}
+
+@media screen and (max-width: 767px) {
+    .page__main {
+        gap: 16px;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .page__component {
+        grid-template-columns: none;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .page__component {
+        grid-template-columns: 1fr;
+    }
 }

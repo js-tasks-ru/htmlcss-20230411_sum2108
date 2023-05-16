@@ -1,12 +1,14 @@
-.footer {
-    padding: 16px 0;
+.footer{
+    padding: 70px 0 140px 0;
     text-align: center;
     font-size: 32px;
     color: white;
-    background-color: #7048E8;
+    border-top: 1px solid #DDE2E5;
+    background-color: #FFFFFF;
 }
 
 .footer__title{
+    color: #212429;
     margin-bottom: 32px;
     text-align: center;
     font-weight: 500;
