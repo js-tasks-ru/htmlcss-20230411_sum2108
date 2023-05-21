@@ -10,6 +10,7 @@
 @import '../../components/histogram/histogram.css';
 @import '../../components/containers/container/container.css';
 @import '../../components/sidebar/sidebar.css';
+@import '../../components/tabs/tabs.css';
 
 :root {
     --white: #ffffff;

@@ -1,7 +1,6 @@
 .header{
     text-align: center;
     background-color: var(--white);
-    border-bottom: 1px solid var(--grey-2);
 }
 .header__title {
     padding: 40px 0;
