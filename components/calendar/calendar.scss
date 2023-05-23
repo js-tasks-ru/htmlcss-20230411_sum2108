@@ -1,0 +1,74 @@
+.calendar {
+    padding: 28px 25px 32px 25px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 300px;
+
+    &__title, &__numbers {
+        font-family: var(--font-inter);
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: var(--dark-blue);
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    &__wrapper {
+        padding-bottom: 100%;
+        position: relative;
+    }
+
+    &__item {
+        display: grid;
+        place-content: center;
+    }
+
+    &__item_day {
+        color: var(--light-gray);
+    }
+
+    &__item_start, &__item_end {
+        color: var(--white);
+        background: var(--button-primary);
+    }
+    &__item_inner {
+        color: var(--dark-blue);
+        background: var(--light-blue);
+    }
+
+    &_small {
+        max-width: 210px;
+        padding: 0;
+        border: none;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .calendar {
+        border: none;
+        &__title, &__numbers {
+            font-size: 12px;
+        }
+        &__item {
+            font-size: 8px;
+        }
+    }
+}

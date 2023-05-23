@@ -1,0 +1,52 @@
+.page {
+    display: grid;
+    height: 100%;
+    background: white;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header" "main" "footer";
+    &__header {
+        grid-area: header;
+    }
+
+    &__main {
+        display: grid;
+        grid-area: main;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px;
+        grid-auto-flow: dense;
+    }
+
+    &__component {
+        display: grid;
+        gap: 56px;
+        width: 100%;
+        grid-template-columns: auto 1fr;
+        grid-area: main;
+    }
+
+
+    &__footer {
+        grid-area: footer;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page {
+        &__main {
+            gap: 16px;
+            grid-template-columns: auto;
+            justify-content: center;
+        }
+        &__component {
+            grid-template-columns: none;
+        }
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .page {
+        &__component {
+            grid-template-columns: 1fr;
+        }
+    }
+}
