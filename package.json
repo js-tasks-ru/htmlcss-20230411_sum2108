@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Course Materials",
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js"
+    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
+    "build": "npx postcss ./src/main.scss -o ./assets/css/main.css --verbose",
+    "fix": "stylelint --fix ./src/main.scss"
   },
   "husky": {
     "hooks": {
@@ -14,15 +16,27 @@
     "*.{html,css,scss}": [
       "prettier --write",
       "git add"
-    ]
+    ],
+    "*.scss": "stylelint --fix",
+    "*.{js,scss,md}": "prettier --write"
   },
   "keywords": [],
   "author": "Sergey Zelenov",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
-    "mocha": "^7.1.2"
+    "cssnano": "^6.0.1",
+    "mocha": "^7.1.2",
+    "postcss": "^8.4.23",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-scss": "^4.0.6",
+    "precss": "^4.0.0",
+    "sass": "^1.62.1",
+    "stylelint": "^15.6.2"
   },
   "dependencies": {
     "husky": "^6.0.0",

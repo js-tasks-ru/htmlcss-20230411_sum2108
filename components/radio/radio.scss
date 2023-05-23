@@ -1,0 +1,63 @@
+.radio {
+    display: inline-flex;
+    position: relative;
+    &__input {
+        position: absolute;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    &__state {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__control {
+        width: 28px;
+        height: 28px;
+        background: var(--white);
+        border: 1px solid var(--grey-2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        display: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: var(--blue);
+    }
+
+    &__title {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--grey-4);
+    }
+
+    &__input:checked ~ &__state &__control {
+        border: 2px solid var(--blue);
+    }
+
+    &__input:checked ~ &__state &__icon {
+        display: block;
+    }
+
+    &__input:disabled ~ &__state &__control {
+        background-color: var(--grey-2);
+    }
+
+    &__input:disabled ~ &__state &__title {
+        color: var(--grey-2)
+    }
+
+    &__input:disabled ~ &__state {
+        cursor: not-allowed;
+    }
+}
