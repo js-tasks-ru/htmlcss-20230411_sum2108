@@ -1,27 +1,16 @@
-.burger-menu__button {
+.burger-menu__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
     outline: none;
     border: none;
     cursor: pointer;
     background-color: transparent;
 }
 
-.burger-menu__button_header {
-    display: none;
-    outline: none;
-    border: none;
-    background-color: transparent;
-    color: var(--text);
-}
-
-.burger-menu__button_close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 32px;
-    width: 32px;
-}
-
-.burger-menu__button_close:hover {
+.burger-menu__close:hover {
     background-color: var(--grey-2);
     border-radius: 50%;
 }
@@ -39,13 +28,5 @@
 
 .burger-menu[data-open] {
     transform: none;
-}
-
-
-@media screen and (max-width: 767px){
-    .burger-menu__button_header {
-        display: block;
-        justify-self: left;
-    }
 }
 
