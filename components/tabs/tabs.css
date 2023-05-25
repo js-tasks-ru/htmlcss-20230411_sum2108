@@ -1,12 +1,3 @@
-#all-tab:checked ~ .tabs__wrapper .tabs__label[for="all-tab"],
-#elements-tab:checked ~ .tabs__wrapper .tabs__label[for="elements-tab"],
-#containers-tab:checked ~ .tabs__wrapper .tabs__label[for="containers-tab"],
-#templates-tab:checked ~ .tabs__wrapper .tabs__label[for="templates-tab"],
-#html-tab:checked ~ .tabs__wrapper .tabs__label[for="html-tab"],
-#css-tab:checked ~ .tabs__wrapper .tabs__label[for="css-tab"] {
-    color: var(--accent);
-    border-bottom-color: var(--text);
-}
 .tabs__content_all-tab,
 .tabs__content_elements-tab,
 .tabs__content_containers-tab,
@@ -15,12 +6,23 @@
 .tabs__content_css-tab {
     display: none;
 }
-#all-tab:checked ~ .tabs__content_all-tab,
-#elements-tab:checked ~ .tabs__content_elements-tab,
-#containers-tab:checked ~ .tabs__content_containers-tab,
-#templates-tab:checked ~ .tabs__content_templates-tab,
-#html-tab:checked ~ .tabs__content_html-tab,
-#css-tab:checked ~ .tabs__content_css-tab {
+
+.tabs__content_all-tab:checked ~ .tabs__wrapper .tabs__label[for="all-tab"],
+.tabs__content_elements-tab:checked ~ .tabs__wrapper .tabs__label[for="elements-tab"],
+.tabs__content_containers-tab:checked ~ .tabs__wrapper .tabs__label[for="containers-tab"],
+.tabs__content_templates-tab:checked ~ .tabs__wrapper .tabs__label[for="templates-tab"],
+.tabs__content_html-tab:checked ~ .tabs__wrapper .tabs__label[for="html-tab"],
+.tabs__content_css-tab:checked ~ .tabs__wrapper .tabs__label[for="css-tab"] {
+    color: var(--accent);
+    border-bottom-color: var(--text);
+}
+
+.tabs__content_all-tab:checked ~ .tabs__content_all-tab,
+.tabs__content_elements-tab:checked ~ .tabs__content_elements-tab,
+.tabs__content_containers-tab:checked ~ .tabs__content_containers-tab,
+.tabs__content_templates-tab:checked ~ .tabs__content_templates-tab,
+.tabs__content_html-tab:checked ~ .tabs__content_html-tab,
+.tabs__content_css-tab:checked ~ .tabs__content_css-tab {
     display: block;
 }
 .tabs__wrapper {
