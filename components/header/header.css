@@ -12,6 +12,15 @@
     font-family: var(--font-inter);
 }
 
+.header__menu {
+    display: none;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: var(--text);
+    cursor: pointer;
+}
+
 .header__nav-panel {
     display: flex;
     justify-content: space-between;
@@ -44,5 +53,9 @@
     .header__logo {
         margin: 0 auto;
         padding: 0 20px;
+    }
+    .header__menu{
+        display: block;
+        justify-self: left;
     }
 }

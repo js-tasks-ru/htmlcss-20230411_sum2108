@@ -1,0 +1,32 @@
+.burger-menu__close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.burger-menu__close:hover {
+    background-color: var(--grey-2);
+    border-radius: 50%;
+}
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100vw);
+    transition: transform 250ms linear;
+    background: grey;
+}
+
+.burger-menu[data-open] {
+    transform: none;
+}
+
